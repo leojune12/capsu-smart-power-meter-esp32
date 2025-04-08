@@ -39,7 +39,7 @@ reading room_2 = {0,0,0,0,0,0};
 
 // EEPROM Address
 byte room_1_power_status_address = 0;
-byte room_2_power_status_address = 1;
+byte room_2_power_status_address = 10;
 
 int room_1_power_status = 0;
 int room_2_power_status = 0;
