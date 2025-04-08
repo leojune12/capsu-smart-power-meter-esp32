@@ -43,34 +43,34 @@ void post_request() {
       DeserializationError error = deserializeJson(responseDoc, response);
 
       if (!error) {
-        const char* room_1_voltage = responseDoc["room_1_voltage"];
-        const char* room_1_current = responseDoc["room_1_current"];
-        const char* room_1_power = responseDoc["room_1_power"];
-        const char* room_1_energy = responseDoc["room_1_energy"];
-        const char* room_1_frequency = responseDoc["room_1_frequency"];
-        const char* room_1_pf = responseDoc["room_1_pf"];
-
-        const char* room_2_voltage = responseDoc["room_2_voltage"];
-        const char* room_2_current = responseDoc["room_2_current"];
-        const char* room_2_power = responseDoc["room_2_power"];
-        const char* room_2_energy = responseDoc["room_2_energy"];
-        const char* room_2_frequency = responseDoc["room_2_frequency"];
-        const char* room_2_pf = responseDoc["room_2_pf"];
-
-        Serial.println("Parsed response:");
-        Serial.println("room_1_voltage: " + String(room_1_voltage));
-        Serial.println("room_1_current: " + String(room_1_current));
-        Serial.println("room_1_power: " + String(room_1_power));
-        Serial.println("room_1_energy: " + String(room_1_energy));
-        Serial.println("room_1_frequency: " + String(room_1_frequency));
-        Serial.println("room_1_pf: " + String(room_1_pf));
-        Serial.println();
-        Serial.println("room_2_voltage: " + String(room_2_voltage));
-        Serial.println("room_2_current: " + String(room_2_current));
-        Serial.println("room_2_power: " + String(room_2_power));
-        Serial.println("room_2_energy: " + String(room_2_energy));
-        Serial.println("room_2_frequency: " + String(room_2_frequency));
-        Serial.println("room_2_pf: " + String(room_2_pf));
+//        const char* room_1_voltage = responseDoc["room_1_voltage"];
+//        const char* room_1_current = responseDoc["room_1_current"];
+//        const char* room_1_power = responseDoc["room_1_power"];
+//        const char* room_1_energy = responseDoc["room_1_energy"];
+//        const char* room_1_frequency = responseDoc["room_1_frequency"];
+//        const char* room_1_pf = responseDoc["room_1_pf"];
+//
+//        const char* room_2_voltage = responseDoc["room_2_voltage"];
+//        const char* room_2_current = responseDoc["room_2_current"];
+//        const char* room_2_power = responseDoc["room_2_power"];
+//        const char* room_2_energy = responseDoc["room_2_energy"];
+//        const char* room_2_frequency = responseDoc["room_2_frequency"];
+//        const char* room_2_pf = responseDoc["room_2_pf"];
+//
+//        Serial.println("Parsed response:");
+//        Serial.println("room_1_voltage: " + String(room_1_voltage));
+//        Serial.println("room_1_current: " + String(room_1_current));
+//        Serial.println("room_1_power: " + String(room_1_power));
+//        Serial.println("room_1_energy: " + String(room_1_energy));
+//        Serial.println("room_1_frequency: " + String(room_1_frequency));
+//        Serial.println("room_1_pf: " + String(room_1_pf));
+//        Serial.println();
+//        Serial.println("room_2_voltage: " + String(room_2_voltage));
+//        Serial.println("room_2_current: " + String(room_2_current));
+//        Serial.println("room_2_power: " + String(room_2_power));
+//        Serial.println("room_2_energy: " + String(room_2_energy));
+//        Serial.println("room_2_frequency: " + String(room_2_frequency));
+//        Serial.println("room_2_pf: " + String(room_2_pf));
 
         response_room_1_power_status = int(responseDoc["room_1_power_status"]);
 
