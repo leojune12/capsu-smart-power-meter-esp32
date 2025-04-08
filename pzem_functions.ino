@@ -97,6 +97,16 @@ void read_pzem() {
     post_request();
 }
 
-void reset_energy(byte pzem_address) {
-  pzems[pzem_address].resetEnergy();
+void reset_all_pzems() {
+    for (int i = 0; i < NUM_PZEMS; i++) {
+        if (pzems[i].resetEnergy()) {
+            Serial.print("PZEM ");
+            Serial.print(i + 1);
+            Serial.println(" energy reset successful.");
+        } else {
+            Serial.print("PZEM ");
+            Serial.print(i + 1);
+            Serial.println(" energy reset failed.");
+        }
+    }
 }

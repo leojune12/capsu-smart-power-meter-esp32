@@ -88,6 +88,9 @@ void setup() {
   
     task_read_pzem.enable();
     task_update_room_power_status.enable();
+
+    // Uncomment to reset PZEMs
+    //  reset_all_pzems();
 }
 
 void loop() {
