@@ -22,7 +22,8 @@ const char* ssid = "Black Mamba";
 const char* password = "Godissogood";
 
 // Replace with your server's URL
-const char* serverName = "http://192.168.8.102:8000/api/test";
+//const char* serverName = "http://192.168.8.100:8000/api/reading";
+const char* serverName = "https://smartenergymeter.capsumain.com/api/reading";
 
 struct reading {
     float voltage;
